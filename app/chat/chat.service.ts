@@ -12,9 +12,9 @@ export class ChatService{
      * @name add
      * @param {string} comment
      */
-    add(comment:string){
+    add(comment:CommentModel){
         // add the new comment
-        this.comments.push(new CommentModel(comment, 'Andrey'));
+        this.comments.push(comment);
 
         console.log('comments ->', this.comments);
     }

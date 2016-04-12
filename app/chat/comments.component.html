@@ -8,11 +8,12 @@
 				</h2>
 				<input type="search"
 				       class="form-control pull-right search"
-				       placeholder="Search">
+				       placeholder="Search"
+				       [(ngModel)]="search">
 			</div>
 		</div>
 
-		<div class="row" *ngFor="#comment of ChatService.comments">
+		<div class="row" *ngFor="#comment of comments | search: search">
 			<epic-chat-comment [comment]="comment"></epic-chat-comment>
 		</div>
 	</div>

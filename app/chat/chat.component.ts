@@ -2,6 +2,7 @@
 import {Component} from 'angular2/core';
 
 import {ChatService} from './chat.service';
+import {CommentModel} from './comment.model';
 import {CommentsComponent} from './comments.component';
 
 @Component({
@@ -13,10 +14,15 @@ import {CommentsComponent} from './comments.component';
 })
 
 export class ChatComponent{
-    public ChatService:ChatService;
+    public comment:CommentModel = new CommentModel('');
 
-    constructor(ChatService:ChatService){
-        this.ChatService = ChatService;
-        console.log('ChatService', this.ChatService);
+    constructor(public ChatService:ChatService){
+    }
+
+    onSubmit(){
+        console.log('submit ->', this.comment);
+
+        this.ChatService.add(this.comment);
+        this.comment = new CommentModel('');
     }
 }
