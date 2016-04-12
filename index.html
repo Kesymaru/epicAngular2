@@ -2,7 +2,8 @@
 <head>
 	<title>Angular 2 QuickStart</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/app.css">
 
 	<!-- 1. Load libraries -->
 	<!-- IE required polyfills, in this exact order -->
@@ -14,6 +15,9 @@
 	<script src="node_modules/systemjs/dist/system.src.js"></script>
 	<script src="node_modules/rxjs/bundles/Rx.js"></script>
 	<script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+	<!-- firebase -->
+	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 
 	<!-- 2. Configure SystemJS -->
 	<script>
@@ -32,6 +36,10 @@
 
 <!-- 3. Display the application -->
 <body>
-<my-app>Loading...</my-app>
+	<div class="container">
+		<epic-chat>
+			Loading Epic Chat...
+		</epic-chat>
+	</div>
 </body>
 </html>

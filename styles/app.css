@@ -1,0 +1,11 @@
+body{
+    background: #373a3c;
+    color: white;
+}
+
+@media(min-width: 700px){
+    .search{
+        margin-top: 20px;
+        max-width: 300px;
+    }
+}

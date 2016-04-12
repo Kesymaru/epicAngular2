@@ -1,0 +1,19 @@
+<div class="row">
+	<div class="col-sm-12 col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3">
+
+		<div class="row">
+			<div class="col-xs-12">
+				<h2 class="pull-left">
+					Comments
+				</h2>
+				<input type="search"
+				       class="form-control pull-right search"
+				       placeholder="Search">
+			</div>
+		</div>
+
+		<div class="row" *ngFor="#comment of ChatService.comments">
+			<epic-chat-comment [comment]="comment"></epic-chat-comment>
+		</div>
+	</div>
+</div>
