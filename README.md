@@ -1,2 +1,5 @@
 # epicAngular2
-Angular 2 demo
+Simple Angular 2 chat example
+
+# Instalation
+npm install
