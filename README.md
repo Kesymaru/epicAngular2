@@ -1,2 +1,9 @@
 # epicAngular2
-Angular 2 demo
+Simple Angular 2 chat example
+
+## Instalation
+git clone https://github.com/Kesymaru/epicAngular2
+
+cd epicAngular2
+
+npm install
